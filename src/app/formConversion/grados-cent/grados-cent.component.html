@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-6">
+        <div class="mb-3">
+            <label for="num1" class="form-label">Indica la temperatura a convertir</label>
+            <input type="text" class="form-control" [(ngModel)]="temperatura" placeholder="">
+        </div>
+        
+        <div class="mb-3">
+            <label>Elige la conversion deseada</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" [(ngModel)]="CelsiusFarenheit" value="cel-far"> De Celsius (°C) a Farenheit (°F)
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" [(ngModel)]="CelsiusKelvin" value="cel-kel"> De Celsius (°C) a Kelvin (°K)
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" [(ngModel)]="FarenheitCelsius" value="far-cel"> De Farenheit (°F) a Celsius (°C)
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" [(ngModel)]="FarenheitKelvin" value="far-kel"> De Farenheit (°F) a Kelvin (°K)
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" [(ngModel)]="KelvinCelsius" value="kel-cel"> De Kelvin (°K) a Celsius (°C)
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" [(ngModel)]="KelvinFarenheit" value="kel-far"> De Kelvin (°C) a Farenheit (°F)
+        </div>
+
+        <div class="mb-3">
+            <button (click)="convertir()" class="btn btn-primary"> Convertir</button>
+        </div>
+        
+       <div class="col-6">
+        <h2>{{resultado}}</h2>
+       </div>
+    </div>
+</div>
