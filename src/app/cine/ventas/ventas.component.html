@@ -1,0 +1,51 @@
+
+
+<link type="text/css" href="ventas.component.css" rel="stylesheet">
+<body>
+    <div class="row">
+        <h1 class="display-1">Cinepolis</h1>
+        <div class="principal" id="principal">
+            <div class="col-6 entrada " id="principalContainer">
+                <h2>Entradas</h2>
+                <div class="mb-3 ">  
+                    <div>
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" [(ngModel)]="nombre" placeholder="" pattern="^[^\d]+$" required>
+                    </div>
+                <div>
+                    <label for="compradores" class="form-label">Cantidad Compradores</label>
+                    <input type="number" class="form-control" [(ngModel)]="cantCompradores" placeholder="" required>
+                </div>
+                <div>
+                    <label for="tarjeta" class="form-label">Tarjeta Cineco</label>
+                    <input type="radio" class="form-check-input" [(ngModel)]="cineco" value="Si" required> Si
+                    <input type="radio" class="form-check-input"  [(ngModel)]="cineco" value="No" required> No
+                </div>
+                <div class="form-check">
+                    <label for="boletos" class="form-label">Cantidad de Boletos</label>
+                    <input type="number" class="form-control" [(ngModel)]="cantBoletos" placeholder="" required>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 salida" id="principalContainer">
+            <h2>Salidas</h2>
+            <div class="col-3">
+                <label for="Subtotal" class="form-label">{{impresion}}</label>
+                <input type="text" [(ngModel)]= "total" class="form-control" placeholder="" disabled readonly>
+            </div>       
+        </div>
+        <br>
+        <div class="col-6 accion" id="containerAccion">
+            <h2>Acciones</h2>
+            <div class="mb-3">
+                <button (click)="procesar()" class="btn btn-primary" id="procButt">Procesar</button>
+                <br>
+                <button (click)="salir()" class="btn btn-primary" id="salirButt">Salir</button>  
+            </div> 
+        </div>
+    </div>
+    </div>   
+        
+</body>
+
+

@@ -1,0 +1,53 @@
+body{
+    padding: 20px;
+    background-color: #14206A;
+    background-image: url("img/logo-cinepolis.jpg");
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+  }
+  
+h1, h2{
+    color: yellow;
+    align-self: center;        
+}
+p, label{
+    color: #14206A;
+}
+#principal{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+#principalContainer {
+    margin: 1rem auto;
+    border: 10px double white; 
+    padding: 20px; 
+    max-width: 400px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+#containerAccion{
+    margin: 1rem auto;
+    border: 10px double white; 
+    padding: 20px; 
+    width: 150px;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.salida h2,
+.salida .mb-3{
+    width: 90%;
+}
+#procButton{
+    background-color: aqua;
+}
+.accion .mb-3{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    
+}

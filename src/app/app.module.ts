@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -6,18 +7,22 @@ import { GradosCentComponent } from './formConversion/grados-cent/grados-cent.co
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material/material.module';
 import { MultiplicarComponent } from './formulario/multiplicar/multiplicar.component';
+import { VentasComponent } from './cine/ventas/ventas.component';
+import { CineModule } from './material/cine/cine.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     MultiplicarComponent,
-    GradosCentComponent
+    GradosCentComponent,
+    VentasComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    CineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
