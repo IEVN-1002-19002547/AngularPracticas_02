@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+    <span>
+        <a mat-button routerLink="active" routerLink="home">
+            <mat-icon>fact-check</mat-icon> PWA-1002
+        </a>
+    </span>
+    <div>
+        <a (click)="navigateToGradosCent()" mat-button>Conversion Temperatura</a>
+    </div>
+    <div>
+        <a (click)="navigateToMultiplicar()" mat-button>Operaciones Básicas</a>
+    </div>
+    <div>
+        <a (click)="navigateToVentas()" mat-button>Cinepolis</a>
+    </div>
+</mat-toolbar>
+<mat-sidenav-container class="padding-10">
+    <router-outlet></router-outlet>
+</mat-sidenav-container>
